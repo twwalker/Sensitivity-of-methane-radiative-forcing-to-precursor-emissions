@@ -1,2 +1,2 @@
 untitled.tex
-section_Methods__.tex
+section_Methods_The_GEOS_Chem__.tex
