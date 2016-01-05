@@ -8,7 +8,7 @@ J=\sum_{i \in D} \mathrm{k}_i \mathrm{[OH]}_i \mathrm{[CH_4]}_i,
 where the subscript $i$ denotes each model gridbox within the tropospheric domain $D$, and $\mathrm{k}_i$ is the temperature-dependent bimolecular rate constant for hydroxyl-driven methane loss~\citep{ref:sander2011}.
 
 \begin{equation}
-
+\nabla_\mathrm{E} J = \sum_{i \in D} \mathrm{k}_i \mathrm{[CH_4]}_i \partial{[OH]}/\partial \mathrm{E},
 \end{equation}
 
 The adjoint-derived sensitivities are combined with emissions drawn from representative concentration pathways (RCP's,~\citet{ref:vanvuuren2011}). These emissions serve as an example, as the adjoint sensitivities could be applied to any (reasonable?) change in emissions.
