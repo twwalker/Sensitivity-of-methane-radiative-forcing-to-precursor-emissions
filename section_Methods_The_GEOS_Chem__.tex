@@ -1,14 +1,20 @@
 \section{Methods}
 
-The GEOS-Chem adjoint model~\cite{ref:henze2007} (v35) is based on the forward GEOS-Chem model v9-02 (\href{http://www.geos-chem.org}{}). It permits efficient calculation of the gradient of a metric of model outputs, such as concentrations, to all model inputs simultaneously, including emissions and reaction rates~\cite{ref:walker2015}.
+The GEOS-Chem adjoint model~\cite{ref:henze2007} (v35) is based on the forward GEOS-Chem model v9-02 (\href{http://www.geos-chem.org}{}). It permits efficient calculation of the gradient of a metric of model outputs, such as concentrations, to all model inputs simultaneously, including emissions and reaction rates~\cite{ref:walker2015}. Let us define the global instantaneous methane loss rate
 
 \begin{equation}
 J=\sum_{i \in D} \mathrm{k}_i \mathrm{[OH]}_i \mathrm{[CH_4]}_i,
 \end{equation}
-where the subscript $i$ denotes each model gridbox within the tropospheric domain $D$, and $\mathrm{k}_i$ is the temperature-dependent bimolecular rate constant for hydroxyl-driven methane loss~\citep{ref:sander2011}.
+where the subscript $i$ denotes each model gridbox within the tropospheric domain $D$, and $\mathrm{k}_i$ is the temperature-dependent bimolecular rate constant for hydroxyl-driven methane loss~\citep{ref:sander2011}. The sensitivity of this quantity to precursor emissions $\mathrm{E}$
 
 \begin{equation}
 \nabla_\mathrm{E} J = \sum_{i \in D} \mathrm{k}_i \mathrm{[CH_4]}_i \frac{\partial \mathrm{[OH]}}{\partial \mathrm{E}},
+\end{equation}
+
+A change in the loss rate of methane affects the global mean methane concentration, after accounting for the feedback effect that methane concentrations have on its own lifetime~\citep{ref:naik2005}:
+
+\begin{equation}
+\Delta C = f\big(1 - \frac{L}{L+\nabla_E L \delta E}\big)
 \end{equation}
 
 The adjoint-derived sensitivities are combined with emissions drawn from representative concentration pathways (RCP's,~\citet{ref:vanvuuren2011}). These emissions serve as an example, as the adjoint sensitivities could be applied to any (reasonable?) change in emissions.
