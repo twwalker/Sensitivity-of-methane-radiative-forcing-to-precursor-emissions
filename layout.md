@@ -3,4 +3,5 @@ section_Introduction_Short_lived_climate__.tex
 section_Results_Figure_ref_fig__.tex
 figures/map2x25_drfde_annmean/map2x25_drfde_annmean.png
 section_Conclusions_This_is_also__.tex
+figures/map2x25_deltarf_comb_rcp85_2050/map2x25_deltarf_comb_rcp85_2050.png
 section_Methods_The_GEOS_Chem__.tex
