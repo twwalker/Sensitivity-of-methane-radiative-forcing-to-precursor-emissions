@@ -3,4 +3,4 @@ section_Introduction_Short_lived_climate__.tex
 section_Results_This_is_cool__.tex
 figures/map2x25_drfde_annmean/map2x25_drfde_annmean.png
 section_Conclusions_This_is_also__.tex
-appendix_Methods_The_GEOS_Chem__.tex
+section_Methods_The_GEOS_Chem__.tex
