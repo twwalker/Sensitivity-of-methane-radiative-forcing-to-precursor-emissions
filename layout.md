@@ -1,6 +1,5 @@
 abstract_This_is_a_test__.tex
 section_Abstract_Methane_s_atmospheric__.tex
-type_something__.tex
 section_Introduction_Short_lived_climate__.tex
 section_Results_Figure_ref_fig__.tex
 figures/map2x25_drfde_annmean/map2x25_drfde_annmean.png
