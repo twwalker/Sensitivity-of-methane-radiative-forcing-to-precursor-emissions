@@ -9,4 +9,4 @@ We_can_also_calculate_the__.tex
 Or_we_can_observe_how__.tex
 figures/ts_rfcomb2x25_10incr_rcp85/ts_rfcomb2x25_10incr_rcp85.png
 section_Conclusions_Methane_radiative_forcing__.tex
-section_Methods_The_GEOS_Chem__.tex
+section_Methods_Describe_the_forward__.tex
