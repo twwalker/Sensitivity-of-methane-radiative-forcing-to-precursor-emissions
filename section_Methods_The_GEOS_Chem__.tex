@@ -34,16 +34,24 @@ where $\Delta L = L^{\prime}-L$, and we adopt the value $f=1.34$ for the feedbac
 \frac{\partial (\Delta C)}{\partial (\Delta L)} = \frac{fCL}{(L+\Delta L)^2}
 \end{equation}
 
-This change can then be related to a change in the methane radiative forcing $F$~\citep{ref:myhre1998}:
+This change can then be related to a change in the methane radiative forcing $F$ using the simplified expression from~\citet{ref:myhre1998}:
 
 \begin{equation}
 \Delta F = \alpha (\sqrt{C-\Delta C} - \sqrt{C})
 \end{equation}
 
+where $\alpha=0.036$ and changes in N2O have been neglected. Differentiating to get the sensitivity to a change in methane concentration,
+
+\begin{equation}
+\frac{\partial (\Delta F)}{\partial (\Delta C)} = \frac{-\alpha}{2\sqrt{C-\Delta C}}
+\end{equation}
+
 These relations combine to give the sensitivity of the methane radiative forcing to a change in precursor emissions:
 
 \begin{equation}
-\frac{\Delta F}{\Delta E} = \frac{\Delta F}{\Delta C} \frac{\Delta C}{\Delta L} \frac{\Delta L}{\Delta E} = .
+\frac{\Delta F}{\Delta E} = \frac{\Delta F}{\Delta C} \frac{\Delta C}{\Delta L} \grad_{\mathbf{E}} L = \frac{-\lambda \alpha f \sqrt{C}}{2L}.
 \end{equation}
+
+Here we have assumed that the changes in loss rate and concentration are small compared to their magnitude (e.g. $\Delta C \ll C$ and $\Delta L \ll L$).
 
 The adjoint-derived sensitivities are combined with emissions changes drawn from representative concentration pathways (RCP's,~\citet{ref:vanvuuren2011}). We assume that the sensitivity calculation is independent of the underlying emissions (i.e. that the spatial pattern of the sensitivity of methane to emissions does not change significantly if the precursor emissions change). These emissions serve as an example, as the adjoint sensitivities could be applied to any (reasonable?) change in emissions.
