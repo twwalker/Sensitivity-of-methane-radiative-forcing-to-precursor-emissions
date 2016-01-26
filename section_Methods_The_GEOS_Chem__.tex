@@ -1,6 +1,8 @@
 \section{Methods}
 
-The GEOS-Chem global chemical transport model (\url{http://www.geos-chem.org}) describes the evolution of atmospheric chemical composition, under transport driven by assimilated meteorological fields from the NASA Goddard Earth Observing System (GEOS-5). The resolution of the GEOS-5 fields is degraded to $2^{\circ} \times 2.5^{\circ}$ and 47 vertical layers for computational efficiency. The chemical mechanism in GEOS-Chem simulates NOx-HOx-VOC chemistry of the troposphere.
+The GEOS-Chem global chemical transport model (\url{http://www.geos-chem.org}) describes the evolution of atmospheric chemical composition, under transport driven by assimilated meteorological fields from the NASA Goddard Earth Observing System (GEOS-5). The resolution of the GEOS-5 fields is degraded to $2^{\circ} \times 2.5^{\circ}$ and 47 vertical layers for computational efficiency. The chemical mechanism in GEOS-Chem simulates NOx-HOx-VOC chemistry of the troposphere. Methane concentrations are prescribed in four zonal bands with values taken from flask data for the simulation year.
+
+% compare ohsens.2 to ohsens.3 to find difference in loss rate between zonal methane and Turner average methane
 
 The GEOS-Chem adjoint model~\cite{ref:henze2007} (v35h) is based on the forward GEOS-Chem model v9-02. It permits efficient calculation of the gradient of a metric of model outputs, such as concentrations, to all model inputs simultaneously, including emissions and reaction rates~\cite{ref:walker2016}. 
 
@@ -9,16 +11,27 @@ Let us define the global instantaneous methane loss rate to tropospheric OH, $L$
 \begin{equation}
 L=\sum_{i \in D} \mathrm{k}_i \mathrm{[OH]}_i \mathrm{[CH_4]}_i,
 \end{equation}
-where the subscript $i$ denotes each model grid box within the tropospheric domain $D$, and $\mathrm{k}_i$ is the temperature-dependent bimolecular rate constant for hydroxyl-driven methane loss~\citep{ref:sander2011}. The sensitivity of this quantity to grid scale precursor emissions $\mathbf{E}$, which is calculated by the adjoint model, is
+
+where the subscript $i$ denotes each model grid box within the tropospheric domain $D$, and $\mathrm{k}_i$ is the temperature-dependent bimolecular rate constant for hydroxyl-driven methane loss~\citep{ref:sander2011}. The sensitivity $\lambda$ of this quantity to grid scale precursor emissions $\mathbf{E}$, which is calculated by the adjoint model, is
 
 \begin{equation}
 \lambda = \nabla_\mathbf{E} L = \sum_{i \in D} \mathrm{k}_i \mathrm{[CH_4]}_i \frac{\partial \mathrm{[OH]_i}}{\partial \mathbf{E}}.
 \end{equation}
 
-A change in the loss rate of methane affects the global mean methane concentration $C$, after accounting for the feedback effect that methane concentrations have on its own lifetime~\citep{ref:naik2005}:
+A change in the loss rate of methane affects the global mean methane concentration $C$. Let us denote with a prime variables calculated in this perturbed state. After accounting for the feedback effect of methane on its own lifetime~\citep{ref:naik2005}, the concentration and loss are related as follows
 
 \begin{equation}
-\Delta C = f\big(1 - \frac{L}{L+\nabla_E L \delta E}\big).
+\Delta C = C^{\prime} - C = f C \big(1 - \frac{L}{L^{\prime}})
+\end{equation}
+
+\begin{equation}
+\Delta C = fC\big(\frac{\Delta L}{L+\Delta L}),
+\end{equation}
+
+where we adopt the value $f=1.34$ for the feedback factor~\citep{ref:holmes2013}. The sensitivity of the change in concentration to a change in the loss rate can be found by taking the partial derivative
+
+\begin{equation}
+\frac{\partial (\Delta C)}{\partial (\Delta L)} = \frac{fCL}{(L+\Delta L)^2}
 \end{equation}
 
 This change can then be related to a change in the methane radiative forcing $F$~\citep{ref:myhre1998}:
