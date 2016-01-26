@@ -1,13 +1,15 @@
 \section{Methods}
 
-Describe the forward model as well: chemistry, dynamics, resolution...
+The GEOS-Chem global chemical transport model (\url{http://www.geos-chem.org}) describes the evolution of atmospheric chemical composition, under transport driven by assimilated meteorological fields from the NASA Goddard Earth Observing System (GEOS-5). The resolution of the GEOS-5 fields is degraded to $2^{\circ} \times 2.5^{\circ}$ and 47 vertical layers for computational efficiency. The chemical mechanism in GEOS-Chem simulates NOx-HOx-VOC chemistry of the troposphere.
 
-The GEOS-Chem adjoint model~\cite{ref:henze2007} (v35) is based on the forward GEOS-Chem model v9-02 (\url{http://www.geos-chem.org}). It permits efficient calculation of the gradient of a metric of model outputs, such as concentrations, to all model inputs simultaneously, including emissions and reaction rates~\cite{ref:walker2015}. Let us define the global instantaneous methane loss rate $L$ as
+The GEOS-Chem adjoint model~\cite{ref:henze2007} (v35h) is based on the forward GEOS-Chem model v9-02. It permits efficient calculation of the gradient of a metric of model outputs, such as concentrations, to all model inputs simultaneously, including emissions and reaction rates~\cite{ref:walker2016}. 
+
+Let us define the global instantaneous methane loss rate to tropospheric OH, $L$, as
 
 \begin{equation}
 L=\sum_{i \in D} \mathrm{k}_i \mathrm{[OH]}_i \mathrm{[CH_4]}_i,
 \end{equation}
-where the subscript $i$ denotes each model gridbox within the tropospheric domain $D$, and $\mathrm{k}_i$ is the temperature-dependent bimolecular rate constant for hydroxyl-driven methane loss~\citep{ref:sander2011}. The sensitivity of this quantity to grid scale precursor emissions $\mathbf{E}$, which is calculated by the adjoint model, is
+where the subscript $i$ denotes each model grid box within the tropospheric domain $D$, and $\mathrm{k}_i$ is the temperature-dependent bimolecular rate constant for hydroxyl-driven methane loss~\citep{ref:sander2011}. The sensitivity of this quantity to grid scale precursor emissions $\mathbf{E}$, which is calculated by the adjoint model, is
 
 \begin{equation}
 \lambda = \nabla_\mathbf{E} L = \sum_{i \in D} \mathrm{k}_i \mathrm{[CH_4]}_i \frac{\partial \mathrm{[OH]_i}}{\partial \mathbf{E}}.
