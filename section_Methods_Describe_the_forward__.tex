@@ -10,7 +10,7 @@ L=\sum_{i \in D} \mathrm{k}_i \mathrm{[OH]}_i \mathrm{[CH_4]}_i,
 where the subscript $i$ denotes each model gridbox within the tropospheric domain $D$, and $\mathrm{k}_i$ is the temperature-dependent bimolecular rate constant for hydroxyl-driven methane loss~\citep{ref:sander2011}. The sensitivity of this quantity to precursor emissions $\mathrm{E}$, which is calculated by the adjoint model, is
 
 \begin{equation}
-\lambda = \nabla_\mathrm{E} L = \sum_{i \in D} \mathrm{k}_i \mathrm{[CH_4]}_i \frac{\partial \mathrm{[OH]}}{\partial \mathrm{E}}.
+\lambda = \nabla_\mathrm{E} L = \sum_{i \in D} \mathrm{k}_i \mathrm{[CH_4]}_i \frac{\partial \mathrm{[OH]}}{\partial \mathrm{E}_i}.
 \end{equation}
 
 A change in the loss rate of methane affects the global mean methane concentration $C$, after accounting for the feedback effect that methane concentrations have on its own lifetime~\citep{ref:naik2005}:
