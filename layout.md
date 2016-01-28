@@ -2,7 +2,7 @@ abstract_This_is_a_test__.tex
 section_Abstract_Methane_s_atmospheric__.tex
 section_Introduction_Short_lived_climate__.tex
 section_Results_Figure_ref_fig__.tex
-figures/map2x25_drfde_annmean/map2x25_drfde_annmean.png
+figures/map2x25_drfde_annmean/fig_rfsens.png
 The_sensitivity_of_the_methane__.tex
 figures/map2x25_deltarf_comb_rcp85_1/map2x25_deltarf_comb_rcp85_1.png
 We_can_also_calculate_the__.tex
