@@ -4,7 +4,7 @@ section_Introduction_Short_lived_climate__.tex
 section_Results_Figure_ref_fig__.tex
 figures/map2x25_drfde_annmean/fig_rfsens.png
 Figure_ref_fig_drfcomb85_shows__.tex
-figures/map2x25_deltarf_comb_rcp85_1/map2x25_deltarf_comb_rcp85_1.png
+figures/map2x25_deltarf_comb_rcp85_1/fig_drfcomb85.png
 We_can_also_calculate_the__.tex
 Or_we_can_observe_how__.tex
 figures/ts_rfcomb2x25_10incr_rcp85/ts_rfcomb2x25_10incr_rcp85.png
