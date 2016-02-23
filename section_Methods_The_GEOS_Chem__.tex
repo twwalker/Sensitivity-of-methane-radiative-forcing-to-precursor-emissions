@@ -5,7 +5,7 @@ The GEOS-Chem global chemical transport model (\url{http://www.geos-chem.org}) d
 % compare ohsens.a2 to ohsens.a3 to find difference in loss rate between zonal methane and Turner average methane
 % need to download ohsens.a3.01.hdf
 
-The GEOS-Chem adjoint model~\cite{ref:henze2007} (v35h) is based on the forward GEOS-Chem model v9-02-01. It permits efficient calculation of the gradient of a metric of model outputs, such as concentrations, to all model inputs simultaneously, including emissions and reaction rates~\cite{ref:paulot2012}. The GEOS-Chem adjoint model has previously been used for studies of tropospheric composition~\citep{ref:zhang2009, ref:walker2012} and radiative forcing~\citep{ref:bowman2012}.
+The GEOS-Chem adjoint model~\cite{ref:henze2007} (v35h) is based on the forward GEOS-Chem model v9-02-01. It permits efficient calculation of the gradient of a metric of model outputs, such as concentrations, to all model inputs simultaneously, including emissions and reaction rates~\cite{ref:paulot2012}. The GEOS-Chem adjoint model has previously been used for studies of tropospheric composition~\citep{ref:zhang2009,ref:walker2012} and radiative forcing~\citep{ref:bowman2012}.
 
 Let us define the global instantaneous methane loss rate to tropospheric OH, $L$, as
 
@@ -55,4 +55,4 @@ These relations combine to give the sensitivity of the methane radiative forcing
 
 Here we have assumed that the changes in loss rate and concentration are small compared to their magnitude (e.g. $\Delta C \ll C$ and $\Delta L \ll L$).
 
-The adjoint-derived sensitivities are combined with emissions changes drawn from representative concentration pathways (RCP's,~\citet{ref:lamarque2011, ref:vanvuuren2011}). We assume that the sensitivity calculation is independent of the underlying emissions (i.e. that the spatial pattern of the sensitivity of methane to emissions does not change significantly if the precursor emissions change). These emissions serve as an example, as the adjoint sensitivity method could be applied to any (reasonable?) change in emissions.
+The adjoint-derived sensitivities are combined with emissions changes drawn from representative concentration pathways (RCP's,~\citet{ref:lamarque2011,ref:vanvuuren2011}). We assume that the sensitivity calculation is independent of the underlying emissions (i.e. that the spatial pattern of the sensitivity of methane to emissions does not change significantly if the precursor emissions change). These emissions serve as an example, as the adjoint sensitivity method could be applied to any (reasonable?) change in emissions.
