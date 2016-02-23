@@ -18,7 +18,7 @@ where the subscript $i$ denotes each model grid box within the tropospheric doma
 
 \begin{equation}
 \lambda = \nabla_\mathbf{E} L = \sum_{i \in D} \mathrm{k}_i \mathrm{[CH_4]}_i \frac{\partial \mathrm{[OH]_i}}{\partial \mathbf{E}}.
-\label{eqn:dLdE}
+\label{eqn:dlde}
 \end{equation}
 
 A change in the loss rate of methane affects the global mean methane concentration $C$. Let us denote with a prime variables calculated in this perturbed state. After accounting for the feedback effect of methane on its own lifetime~\citep{ref:fuglestvedt1999,ref:naik2005}, the concentration and loss are related as follows
@@ -38,24 +38,28 @@ where $\Delta L = L^{\prime}-L$, and we adopt the value $f=1.34$ for the feedbac
 
 \begin{equation}
 \frac{\partial (\Delta C)}{\partial (\Delta L)} = \frac{fCL}{(L+\Delta L)^2}.
+\label{eqn:dcdl}
 \end{equation}
 
 This change can then be related to a change in the methane radiative forcing $F$ using the simplified expression from~\citet{ref:myhre1998}:
 
 \begin{equation}
 \Delta F = \alpha (\sqrt{C-\Delta C} - \sqrt{C}),
+\label{eqn:df}
 \end{equation}
 
-where $\alpha=0.036$ and changes in N2O have been neglected. Differentiating to get the sensitivity to a change in methane concentration,
+where $\alpha=0.036$~\citep{ref:myhre1998} and changes in N2O have been neglected. Differentiating Equation~\ref{eqn:df} gives the sensitivity of the forcing to a change in methane concentration,
 
 \begin{equation}
 \frac{\partial (\Delta F)}{\partial (\Delta C)} = \frac{-\alpha}{2\sqrt{C-\Delta C}}.
+\label{eqn:dfdc}
 \end{equation}
 
-These relations combine to give the sensitivity of the methane radiative forcing to a change in precursor emissions:
+Combinining Equations~\ref{eqn:dlde},~\ref{eqn:dcdl}, and~\ref{eqn:dfdc} relates the sensitivity of the methane radiative forcing to a change in precursor emissions, through their interaction with OH and a change in methane loss rate:
 
 \begin{equation}
 \frac{\Delta F}{\Delta E} = \frac{\Delta F}{\Delta C} \frac{\Delta C}{\Delta L} \nabla_{\mathbf{E}} L = \frac{-\lambda \alpha f \sqrt{C}}{2L}.
+\label{eqn:dfde}
 \end{equation}
 
 Here we have assumed that the changes in loss rate and concentration are small compared to their magnitude (e.g. $\Delta C \ll C$ and $\Delta L \ll L$).
