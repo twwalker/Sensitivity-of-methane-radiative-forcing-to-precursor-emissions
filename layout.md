@@ -6,7 +6,7 @@ figures/map2x25_drfde_annmean/fig_rfsens.png
 One_major_advantage_of_having__.tex
 The_sensitivities_calculated_above_may__.tex
 figures/map2x25_deltarf_comb_rcp85_1/fig_drfcomb85.png
-Or_we_can_observe_how__.tex
+section_Projected_radiative_forcing_in__.tex
 figures/ts_rfcomb2x25_10incr_rcp85/ts_rfcomb2x25_10incr_rcp85.png
 section_Discussion_Methane_radiative_forcing__.tex
 section_Methods_The_GEOS_Chem__.tex
