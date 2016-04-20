@@ -6,7 +6,7 @@ figures/fig_equivems/fig_equivems.png
 The_sensitivities_calculated_above_may__.tex
 figures/map2x25_deltarf_comb_rcp85_1/eqem_rank_rcp6_abs_combo.png
 section_Projected_radiative_forcing_in__.tex
-figures/ts_rfcomb2x25_10incr_rcp85/ts_rfcomb2x25_10incr_rcp85.png
+figures/ts_rfcomb2x25_10incr_rcp85/fig_rftschina.png
 section_Discussion_Methane_radiative_forcing__.tex
 section_Methods_The_GEOS_Chem__.tex
 figures/fig_rfsens/fig_rfsens.png
