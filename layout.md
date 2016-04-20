@@ -10,3 +10,4 @@ section_Projected_radiative_forcing_in__.tex
 figures/ts_rfcomb2x25_10incr_rcp85/ts_rfcomb2x25_10incr_rcp85.png
 section_Discussion_Methane_radiative_forcing__.tex
 section_Methods_The_GEOS_Chem__.tex
+figures/fig_rfsens/fig_rfsens.png
