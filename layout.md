@@ -2,7 +2,6 @@ abstract_This_is_a_test__.tex
 section_Abstract_placeholder__.tex
 section_Introduction_SLCF_important_for__.tex
 section_Sensitivity_of_methane_radiative__.tex
-One_major_advantage_of_having__.tex
 The_sensitivities_calculated_above_may__.tex
 figures/map2x25_deltarf_comb_rcp85_1/fig_drfcomb85.png
 section_Projected_radiative_forcing_in__.tex
