@@ -5,6 +5,7 @@ section_Precursor_emissions_contributions_to__.tex
 figures/fig_equivems/fig_rfeqems2.png
 Figure_ref_fig_eqemsrank_ranks__.tex
 figures/map2x25_deltarf_comb_rcp85_1/eqem_rank_rcp6_abs_combo.png
+The_distribution_of_the_global__.tex
 section_Methane_radiative_forcing_attributed__.tex
 figures/ts_rfcomb2x25_10incr_rcp85/fig_rftschina.png
 The_overall_change_in_methane__.tex
