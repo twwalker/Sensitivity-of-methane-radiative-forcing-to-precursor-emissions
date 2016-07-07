@@ -9,7 +9,7 @@ The_distribution_of_the_cumulative__.tex
 section_Methane_radiative_forcing_attributed__.tex
 figures/ts_rfcomb2x25_10incr_rcp85/fig_rftschina.png
 The_overall_change_in_methane__.tex
-section_Discussion_Future_methane_radiative__.tex
+section_Discussion_Future_methane_RF__.tex
 section_Methods_The_GEOS_Chem__.tex
 figures/fig_rfsens/fig_rfsens.png
 On_a_global_scale_the__.tex
