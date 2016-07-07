@@ -2,6 +2,7 @@ abstract_This_is_a_test__.tex
 section_Abstract_The_net_radiative__.tex
 section_Introduction_SLCF_important_for__.tex
 figures/fig_rfsens/fig_rfsens.png
+On_a_global_scale_the__.tex
 section_Precursor_emissions_contributions_to__.tex
 figures/fig_equivems/fig_rfeqems2.png
 In_order_to_more_easily__.tex
@@ -12,4 +13,3 @@ figures/ts_rfcomb2x25_10incr_rcp85/fig_rftschina.png
 The_overall_change_in_methane__.tex
 section_Discussion_Future_methane_radiative__.tex
 section_Methods_The_GEOS_Chem__.tex
-On_a_global_scale_the__.tex
