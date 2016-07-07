@@ -3,7 +3,7 @@ section_Abstract_The_net_radiative__.tex
 section_Introduction_SLCF_important_for__.tex
 figures/fig_rfsens/fig_rfsens.png
 On_a_global_scale_the__.tex
-section_Precursor_emissions_contributions_to__.tex
+Previous_work_has_calculated_global__.tex
 figures/fig_equivems/fig_rfeqems2.png
 In_order_to_more_easily__.tex
 figures/map2x25_deltarf_comb_rcp85_1/eqem_rank_rcp6_2050_abs_names_v2.png
