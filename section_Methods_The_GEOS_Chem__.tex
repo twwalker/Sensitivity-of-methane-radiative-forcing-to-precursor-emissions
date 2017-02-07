@@ -7,14 +7,14 @@ The GEOS-Chem adjoint model~\cite{ref:henze2007} (v35h) is based on the forward 
 Let us define the global instantaneous methane loss rate to tropospheric OH, $L$, as
 
 \begin{equation}
-L=\sum_{i \in D} \mathrm{k}_i \mathrm{[OH]}_i \mathrm{[CH_4]}_i,
+L=\sum_{i \in D} \frac{\mathrm{k}_i}{\mathrm{V}_i} \mathrm{[OH]}_i \mathrm{[CH_4]}_i,
 \label{eqn:lch4}
 \end{equation}
 
-where the subscript $i$ denotes each model grid box within the tropospheric domain $D$, and $\mathrm{k}_i$ is the temperature-dependent bimolecular rate constant for hydroxyl-driven methane loss~\citep{ref:sander2011}. The sensitivity $\lambda$ of the loss rate defined in Equation~\ref{eqn:lch4} to grid scale precursor emissions $\mathbf{E}$, which is calculated by the GEOS-Chem adjoint model, is
+where the subscript $i$ denotes each model grid box within the tropospheric domain $D$, $\mathrm{V}_i$ is the grid box volume, and $\mathrm{k}_i$ is the temperature-dependent bimolecular rate constant for hydroxyl-driven methane loss~\citep{ref:sander2011}. The sensitivity $\lambda$ of the loss rate defined in Equation~\ref{eqn:lch4} to grid scale precursor emissions $\mathbf{E}$, which is calculated by the GEOS-Chem adjoint model, is
 
 \begin{equation}
-\lambda = \nabla_\mathbf{E} L = \sum_{i \in D} \mathrm{k}_i \mathrm{[CH_4]}_i \frac{\partial \mathrm{[OH]_i}}{\partial \mathbf{E}}.
+\lambda = \nabla_\mathbf{E} L = \sum_{i \in D} \frac{\mathrm{k}_i}{\mathrm{V}_i} \mathrm{[CH_4]}_i \frac{\partial \mathrm{[OH]_i}}{\partial \mathbf{E}}.
 \label{eqn:dlde}
 \end{equation}
 
