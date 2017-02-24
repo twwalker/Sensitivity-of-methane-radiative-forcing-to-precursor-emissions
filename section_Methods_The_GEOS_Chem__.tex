@@ -31,40 +31,38 @@ Here, we have assumed that the overall change in methane loss rate due to emissi
 \end{align}
 \end{equation}
 
-where the primed variables denote those calculated in a chemical state perturbed by additional precursor emissions (e.g. $\Delta L = \bar{L}^{\prime}-\bar{L}$), and the overbars denote the time-averaged, steady-state loss rate. We assume that changes in long-term emissions that perturb the instantaneous loss rate transfer to the steady-state loss rates ($\bar{L} \approx L$).  We adopt the value $f=1.34$ for the feedback factor of additional methane on its own lifetime~\citep{ref:holmes2013}. The sensitivity of the change in concentration to a change in the loss rate can be found by taking the partial derivative of Equation~\ref{eqn:dc}
+where the primed variables denote those calculated in a chemical state perturbed by additional precursor emissions (e.g. $\Delta L = \bar{L}^{\prime}-\bar{L}$), and the overbars denote the time-averaged, steady-state loss rate. We assume that changes in long-term emissions that perturb the instantaneous loss rate transfer to the steady-state loss rates ($\bar{L} \approx L$).  We adopt the value $f=1.34$ for the feedback factor of additional methane on its own lifetime~\citep{ref:holmes2013}. The sensitivity of the change in concentration to a change in the loss rate can be found by rearranging Equation~\ref{eqn:dc}
 
 \begin{equation}
-\frac{\partial (\Delta C)}{\partial (\Delta L)} = \frac{-fCL}{(L+\Delta L)^2}.
+\frac{\Delta C}{\Delta L} = \frac{-fC}{L^{\prime}}.
 \label{eqn:dcdl}
 \end{equation}
 
 This change can then be related to a change in the methane radiative forcing $F$ using the simplified expression from~\citet{ref:myhre1998}:
 
 \begin{equation}
-\Delta F = \alpha (\sqrt{\Delta C + C} - \sqrt{C}),
+F = \alpha (\sqrt{\Delta C + C} - \sqrt{C}) - (g(C^{\prime}) - g(C)),
 \label{eqn:df}
 \end{equation}
 
-where $\alpha=0.036 \mathrm{W}\mathrm{m}^{-2}\mathrm{ppbv}^{-1/2}$ is an empirical constant~\citep{ref:myhre1998}. Differentiating Equation~\ref{eqn:df} gives the sensitivity of the forcing to a change in methane concentration,
+where $\alpha=0.036 \mathrm{W}\mathrm{m}^{-2}\mathrm{ppbv}^{-1/2}$ is an empirical constant, and $g$ is a function of the methane and N2O concentrations~\citep{ref:myhre1998}. Differentiating Equation~\ref{eqn:df} gives the sensitivity of the forcing to a change in methane concentration,
 
 \begin{equation}
-\frac{\partial (\Delta F)}{\partial (\Delta C)} = \frac{\alpha}{2\sqrt{C+\Delta C}}.
+\frac{\partial F}{\partial C} = \frac{\alpha}{2\sqrt{C^{\prime}}} + \frac{\partial g}{\partial C}.
 \label{eqn:dfdc}
 \end{equation}
 
-Combinining Equations~\ref{eqn:dlde},~\ref{eqn:dcdl}, and~\ref{eqn:dfdc} relates the sensitivity of the methane radiative forcing to a change in precursor emissions, through their interaction with OH and a change in methane loss rate:
+The partial derivative of the N2O overlap term is small in cases examined here. Combinining Equations~\ref{eqn:dlde},~\ref{eqn:dcdl}, and~\ref{eqn:dfdc} relates the sensitivity of the methane radiative forcing to a change in precursor emissions, through their interaction with OH and a change in methane loss rate:
 
 \begin{equation}
 \begin{align}
 \begin{split}
 \frac{\Delta F}{\Delta E} &= \frac{\Delta F}{\Delta C} \frac{\Delta C}{\Delta L} \nabla_{\mathbf{E}} L \\
-                          &= \frac{-\lambda \alpha f \sqrt{C}}{2L}.
+                          &= \frac{-\lambda \alpha f C}{2L^{\prime}\sqrt{C^{\prime}}}.
 \end{split}
 \label{eqn:dfde}
 \end{align}
 \end{equation}
-
-Here we have assumed that the changes in methane loss rate and concentration are small compared to their magnitude (e.g. $\Delta C \ll C$ and $\Delta L \ll L$).
 
 To derive the RF due to methane emissions, we assume the methane emissions become globally well-mixed in the atmosphere, and calculate the change in concentration produced for a given mass of additional emissions. Then we apply Equation~\ref{eqn:df} to calculate the forcing. We invert this relationship to calculate the equivalent emissions of methane due to a change in RF from changes in precursor emissions.
 
