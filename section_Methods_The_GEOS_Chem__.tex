@@ -24,14 +24,14 @@ Here, we have assumed that the overall change in methane loss rate due to emissi
 \begin{align}
 \begin{split}
 \Delta C &= C^{\prime} - C \\
-         &= f C \Big(\frac{L}{L^{\prime}} - 1\Big) \\
-         &= fC\Big(\frac{-\Delta L}{L+\Delta L}\Big),
+         &= f C \Big(\frac{\bar{L}}{\bar{L}^{\prime}} - 1\Big) \\
+         &= fC\Big(\frac{-\Delta L}{\bar{L}+\Delta L}\Big),
 \end{split}
 \label{eqn:dc}
 \end{align}
 \end{equation}
 
-where the primed variables denote those calculated in a chemical state perturbed by additional precursor emissions (e.g. $\Delta L = L^{\prime}-L$).  We adopt the value $f=1.34$ for the feedback factor of additional methane on its own lifetime~\citep{ref:holmes2013}. The sensitivity of the change in concentration to a change in the loss rate can be found by taking the partial derivative of Equation~\ref{eqn:dc}
+where the primed variables denote those calculated in a chemical state perturbed by additional precursor emissions (e.g. $\Delta L = \bar{L}^{\prime}-\bar{L}$), and the overbars denote the time-averaged, steady-state loss rate. We assume that changes in long-term emissions that perturb the instantaneous loss rate transfer to the steady-state loss rates.  We adopt the value $f=1.34$ for the feedback factor of additional methane on its own lifetime~\citep{ref:holmes2013}. The sensitivity of the change in concentration to a change in the loss rate can be found by taking the partial derivative of Equation~\ref{eqn:dc}
 
 \begin{equation}
 \frac{\partial (\Delta C)}{\partial (\Delta L)} = \frac{-fCL}{(L+\Delta L)^2}.
