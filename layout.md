@@ -16,3 +16,4 @@ On_a_global_scale_the__.tex
 section_Supplement_Additional_runs_with__.tex
 figures/fig_diffwindow/fig_diffwindow.png
 A_run_with_anthropogenic_emissions__.tex
+figures/fig_diffstate/fig_diffstate.png
