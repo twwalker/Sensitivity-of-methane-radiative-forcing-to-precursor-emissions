@@ -18,3 +18,4 @@ figures/fig_diffwindow/fig_diffwindow.png
 A_run_with_anthropogenic_emissions__.tex
 figures/fig_diffstate/fig_diffstate.png
 We_also_have_an_alternate__.tex
+figures/fig_rfsens2/fig_rfsens2.png
