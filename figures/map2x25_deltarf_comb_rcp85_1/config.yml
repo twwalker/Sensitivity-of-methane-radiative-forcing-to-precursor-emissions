@@ -1,0 +1,7 @@
+---
+version: 1
+multicolumn: false
+web-width: 500px
+align: center
+float: h!
+path: figures/map2x25_deltarf_comb_rcp85_1/config.yml
