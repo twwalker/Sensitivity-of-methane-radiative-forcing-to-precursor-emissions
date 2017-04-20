@@ -1,7 +1,9 @@
 ---
-version: 1
 multicolumn: false
+export-width: 
 web-width: 500px
 align: center
 float: h!
+export-filename: 
+version: 1
 path: figures/map2x25_deltarf_comb_rcp85_1/config.yml
